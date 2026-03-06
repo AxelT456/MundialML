@@ -1,4 +1,4 @@
-# ==============================================================================
+sr# ==============================================================================
 # PROYECTO: Análisis Predictivo - Copa Mundial de la FIFA
 # FASE 2: Limpieza de Datos (Metodología SFCA)
 # ARCHIVO: src/02_cleaning.R
