@@ -1,1 +1,0 @@
-mundiales <- read.csv("world_cup_last_50_years.csv")

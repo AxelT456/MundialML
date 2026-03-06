@@ -1,0 +1,9 @@
+# Archivos temporales de R
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# Ignorar los datos crudos si son muy pesados (aunque los tuyos son ligeros, es buena práctica)
+# data/raw/
+.Rproj.user
