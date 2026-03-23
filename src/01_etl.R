@@ -43,3 +43,4 @@ print(paste("Tabla de Anfitriones:", nrow(anfitriones), "filas y", ncol(anfitrio
 # 3. Ver qué variables contiene el dataset histórico (el más grande de los tres)
 print("=== ESTRUCTURA DEL DATASET DE TORNEOS ===")
 str(torneos)
+

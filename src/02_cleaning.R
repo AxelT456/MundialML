@@ -1,4 +1,4 @@
-sr# ==============================================================================
+# ==============================================================================
 # PROYECTO: Análisis Predictivo - Copa Mundial de la FIFA
 # FASE 2: Limpieza de Datos (Metodología SFCA)
 # ARCHIVO: src/02_cleaning.R
@@ -39,7 +39,7 @@ print("Aplicando Ingeniería de Características (Feature Engineering)...")
 # Creación de la Variable Objetivo (Target) para la Regresión Lineal
 df$total_goals <- df$home_goals + df$away_goals
 
-# Simplificación de Categorías (Aplicando la Ley de Miller de tus apuntes)
+# Simplificación de Categorías 
 # Reducimos las múltiples fases a un factor binario (1 = Eliminatoria, 0 = Fase de Grupos)
 df$is_knockout <- ifelse(grepl("Group", df$stage), 0, 1)
 df$is_knockout <- as.factor(df$is_knockout)
