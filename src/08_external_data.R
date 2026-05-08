@@ -92,3 +92,7 @@ print(summary(resultados_cv))
 
 print("Importancia de Variables (Random Forest):")
 print(varImp(modelo_rf))
+
+# Gráfica de Importancia del modelo GBM con los nuevos datos
+importancia_gbm <- varImp(modelo_gbm) 
+plot(importancia_gbm, main = "Reconfiguración de Importancia (Inyección de Mismatch Index)")

@@ -111,3 +111,7 @@ print(summary(resultados_cv))
 # Ver cuál variable pesó más para Random Forest
 print("Importancia de Variables según Random Forest:")
 print(varImp(modelo_rf))
+
+# Gráfica de Importancia de Variables de Random Forest
+importancia_rf <- varImp(modelo_rf) # Asumiendo que tu modelo Random Forest se llama modelo_rf o similar
+plot(importancia_rf, main = "Importancia de Variables")

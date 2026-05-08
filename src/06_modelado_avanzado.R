@@ -116,3 +116,13 @@ print(summary(resultados_cv))
 # Guardar la gráfica comparativa de MAE
 p_comparativa <- bwplot(resultados_cv, metric = "MAE", main = "Comparación de MAE (Menor es mejor)")
 print(p_comparativa)
+
+# Generar Boxplot comparativo de los modelos
+library(lattice)
+bwplot(resultados_cv, metric = "RMSE", 
+       main = "Comparativa de Algoritmos (Validación Cruzada 10-Fold)",
+       scales = list(x = list(relation = "free"), y = list(relation = "free")))
+
+# También puedes generar el de R-Cuadrado
+bwplot(resultados_cv, metric = "Rsquared", 
+       main = "Estancamiento de la Varianza (Techo de Cristal)")

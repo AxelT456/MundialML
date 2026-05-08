@@ -99,3 +99,7 @@ print(summary(resultados_cv))
 print("=========================================================")
 print("La configuración perfecta (Hiperparámetros) que encontró GBM fue:")
 print(modelo_gbm$bestTune)
+
+# Gráfica de la optimización (Grid Search)
+plot(modelo_gbm, 
+     main = "Profundidad vs Número de Árboles vs RMSE")
